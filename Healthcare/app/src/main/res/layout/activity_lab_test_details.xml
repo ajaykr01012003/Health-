@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:gravity="center"
+    tools:context=".DoctorDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/textViewDDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 * 7 HEALTHCARE"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/textViwODDTitle"
+        android:layout_below="@id/textViewDDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliver Location : Pune"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/BMDdetail"
+        android:layout_below="@id/textViwODDTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Test And Package"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:textColor="@color/yellowLight"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/BmdEditText"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_above="@id/HADbtnBack"
+        android:layout_below="@id/BMDdetail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="50dp"
+        android:autofillHints="false"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/bmdTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/BUYMdicineDetailstbn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="194dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:hint="Rupee "
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/HADbtnBack"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="21dp"
+        android:text="Back"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/BUYMdicineDetailstbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="20dp"
+
+        android:text="Go To Cart"
+        android:textSize="25sp" />
+
+</RelativeLayout>

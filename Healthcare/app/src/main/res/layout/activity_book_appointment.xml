@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:gravity="center"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".BookAppointmentActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+
+        android:textAlignment="center"
+        android:text="24 * 7 Healthcare"
+        android:textColor="@color/purple200"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAppTitle"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="Book Appointment"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAppTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:drawablePadding="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textMultiLine"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:drawablePadding="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Contect Number"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Fees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContactNumber"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Fees"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/select_id"
+        android:text="Select Date"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/Fees"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <TextView
+        android:id="@+id/select_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Fees"
+        android:layout_below="@+id/Fees"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="21dp"
+        android:text="Select Time"
+        android:textColor="@color/white"
+
+        />
+
+    <Button
+        android:id="@+id/buttonAppTime"
+        android:layout_below="@+id/select_time"
+        android:layout_width="wrap_content"
+        android:layout_alignEnd="@+id/select_time"
+        android:text="10:00"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/buttonAppDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_id"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="14dp"
+        android:text="31/03/2027" />
+
+    <Button
+        android:id="@+id/buttonBootAppointment"
+        android:layout_width="281dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/buttonAppDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/btn_bg"
+        android:text="Register"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonAppBack"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonBootAppointment"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/btn_bg"
+        android:text="Back"
+        android:textSize="25sp" />
+
+</RelativeLayout>
